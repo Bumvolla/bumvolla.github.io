@@ -1,0 +1,52 @@
+---
+title: Documentation
+layout: default
+description: "Documentation for published tools and plugins"
+header-img: "../img/docsheader.png"
+header-mask: 0.27
+---
+
+<!--
+Credits: this page shamelessly borrowed a lot from:
+https://github.com/kitian616/jekyll-TeXt-theme
+-->
+<!-- Page Header -->
+{% include intro-header.html type='page' short=false %}
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+            <!-- Selecting posts that have `post_type` defined and set to `documentation` -->
+            {%- assign _documentation = site.posts | where: "post_type", "documentation" -%}
+            {%- assign _documentation = _documentation | reverse -%}
+        
+            <!-- Article List -->
+            <div class="mini-post-list a">
+                {%- for _project in _documentation -%}
+                <section>
+                    <div class="project-item">
+                        <a href="{{ _project.url | prepend: site.baseurl }}">
+                            <div class="project-content">
+                                <h2 class="post-title">
+                                    {{ _project.title }}
+                                </h2>
+                                {% if _project.description %}
+                                <h3 class="post-subtitle">
+                                    {{ _project.description }}
+                                </h3>
+                                {% endif %}
+                            </div>
+                        </a>
+                        <hr>
+                        {% if _project.thumb-img %}
+                        <img src="{{ _project.thumb-img }}" alt="Project Image" class="project-image">
+                        {% endif %}
+                    </div>
+                </section>
+                {% endfor %}
+            </div>
+        </div>
+	</div>
+</div>

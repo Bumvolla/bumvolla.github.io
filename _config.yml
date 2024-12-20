@@ -1,7 +1,7 @@
 # Site settings
 title: Sora's Blog
 SEOTitle: Sora Mas Blog
-header-img: img/UCxcjP.png
+header-img: img/bulbheader.png
 email: soramasd@gmail.com
 description: "Here I freak about making videogames"
 keyword: "Unreal Engine, 3D Art, 3D, UE5, Tech Art, Shaders"
@@ -13,12 +13,9 @@ future: true
 
 # SNS settings
 RSS: false
-#weibo_username: huxpro
-#zhihu_username: huxpro
 github_username: bumvolla
 twitter_username: bumvolla
-#facebook_username:  huxpro
-#linkedin_username:  firstname-lastname-idxxxx
+
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
@@ -57,9 +54,6 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
-
-# Disqus settings
-disqus_username: sora
 
 # Netease settings
 netease_comment: false
