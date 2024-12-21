@@ -80,6 +80,11 @@ service-worker: true
 # MathJax rendering for layout:page (e.g. post preview)
 page-mathjax: false
 
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+
 # Friends
 friends:
   []
