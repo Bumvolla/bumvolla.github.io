@@ -14,7 +14,7 @@ future: true
 # SNS settings
 RSS: false
 github_username: bumvolla
-twitter_username: bumvolla
+bsky_username: soramasd
 artstation_username: bumvolla
 linkedin_username: soramd
 
