@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I built a UE plugin updater"
+title: "I built a UE plugin updater!"
 subtitle: "UE_PluginBuilder uses Unreal Automation Tool to build a .uplugin to a greater engine version"
 date: 2025-01-21
 author: "Sora Mas"
