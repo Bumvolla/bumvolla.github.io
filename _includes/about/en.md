@@ -7,4 +7,4 @@ I'm also part of Narobot (a non-profit organization where we play arround with 3
 
 As said I studied 3D art at [FX Animation](https://fxanimation.es/en/) but almost everything I know was learned at the internet.
 
-Download [My CV](img/SoraMas.pdf)
+Download [My CV](/img/SoraMas.pdf)
