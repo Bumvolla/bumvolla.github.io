@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "EasyPowerLinesDocs"
+title: "EasyPowerLines"
 subtitle: "Proxy"
 date: 2025-02-20
 author: "Sora Mas"
