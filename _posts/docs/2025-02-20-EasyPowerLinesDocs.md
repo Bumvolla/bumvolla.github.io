@@ -61,7 +61,7 @@ For this pluign to work you'll need:
 
  You have examples for all of them in the Plugin content folder.
 
- ### Catenary pole preset
+ ## Catenary pole preset
 
  #### Blueprint creation
 
@@ -86,5 +86,27 @@ For this pluign to work you'll need:
 
  # Plugin usage
 
+ ## Spline utility pole
  
+ Open the add actors to scene tab and drag and drop a *Spline utility pole* actor.
+ Fill out the exposed values:
+
+ ### Generation
+ |*Parameter*|*Description*|
+ |Actor distance|Distance between each pole that will be created|
+ |Pole preset|Any class that inherits from UtilityPolePreset, determines the pole mesh and conection points|
+ |Slack|The min ammount of slack the wires will have|
+ |Slack variation|The max ammount of random slack that will be added to the slack value (Higher values will take longer to calculate)|
+ |Spline resolution|Precision of the catenary curve that will be created|
+ |WireMesh|Static mesh that will be used for the spline mesh construction|
+ |Wire mesh axis|Which is the long axis of the static mesh|
+ |RandomTilt|Max random rotation that will be applied in the X axis of the pole|
+ |bAutoGenerate|Run or not logic in construction script(beta)|
+ |||
+  ### Snaping
+ |*Parameter*|*Description*|
+ |bSnapToTerrain|Determines if the pole will try to snap to the terrain or not|
+ |RayLength|Ray of the ray that will search for collision to snap the pole to it|
+ |CollisionChannel|The collision channel the ray will test for|
+ |bDrawDebugLines|Wether or not debug lines will be drawn for the raycast|
 
