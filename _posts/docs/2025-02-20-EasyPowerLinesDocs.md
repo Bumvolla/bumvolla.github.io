@@ -16,13 +16,6 @@ tags:
 
 ---
 
-<p align="center">
-  <a href="https://github.com/Bumvolla/UE_EasyPowerLines">
-    <img src="/img/EasyPowerLines.png" alt="Logo" width="120" height="120">
-  </a>
-<h3 align="center">Easy power lines</h3>
-</p>
-
 # Features
 
 - Performant power lines procedural generation
