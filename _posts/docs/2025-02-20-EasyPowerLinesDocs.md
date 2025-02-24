@@ -6,7 +6,7 @@ date: 2025-02-20
 author: "Sora Mas"
 post_type: "documentation"
 thumb-img: "/img/EasyPowerLines.png"
-header-img: "img/EasyPowerLinesDocs/EasyPowerLinesHeader.png"
+header-img: "/img/EasyPowerLinesDocs/EasyPowerLinesHeader.png"
 hidden: true
 tags:
   - UE5
@@ -64,7 +64,7 @@ You have examples for all of them in the Plugin content folder.
 3. Open the *All classes* dropdown and search for *UtilityPolePreset*
 4. Press the select button.
 
-![image](img/EasyPowerLinesDocs/UtilityPolePresetCreation.png)
+![image](/img/EasyPowerLinesDocs/UtilityPolePresetCreation.png)
 
 #### Blueprint setup
 
@@ -75,7 +75,7 @@ You have examples for all of them in the Plugin content folder.
 3. Press the *Copy to class defaults* button in the details pannel.
 4. Make sure the values have refreshed inside the blueprint, if not, they will once the editor is restarted.
 
-![image](img/EasyPowerLinesDocs/UtilityPolePresetWithTargets.png)
+![image](/img/EasyPowerLinesDocs/UtilityPolePresetWithTargets.png)
 
 
 # Plugin usage
@@ -120,5 +120,5 @@ Having it turned off is usefull for visualization purposes and reduces the overa
 The idea is turning it on once you're done with the tool setup.
 
 
-![image](img/powerlinesbg.png)
+![image](/img/powerlinesbg.png)
 
