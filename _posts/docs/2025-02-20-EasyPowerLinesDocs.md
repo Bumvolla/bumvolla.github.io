@@ -116,9 +116,10 @@ Draw debug lines will draw for 10 seconds 3 lines from diferent colors:
 ### Cleanup splines
 
 Cleanup splines exist because of the impact on the viewport performance of large splines with a lot of points while the "game view"(*G* shortcut) is turned off. 
+
 Having it turned off is usefull for visualization purposes and reduces the overall generation process speed.
 The idea is turning it on once you're done with the tool setup.
 
 
-![image](/img/powerlinesbg.png)
+![image](/img/EasyPowerLinesDocs/powerlinesbg.png)
 
