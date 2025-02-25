@@ -48,7 +48,7 @@ If not, you can download the .zip file in the [latest release](https://github.co
 
 ## In engine
 
-For this pluign to work you'll need:
+For this plugin to work you'll need:
 - An static mesh for the pole
 - An static mesh for the wire
 - Setup a blueprint that inherits from *Catenary pole preset*
@@ -131,6 +131,7 @@ You have examples for all of them in the Plugin content folder.
 | Wire mesh | Static mesh that will be used for the wire generation |
 | Wire mesh axis | The axis of the static mesh that will be the connection point, usually the long one |
 | Auto generate | Determines if the logic runs or not in the construction script (beta) |
+| Cleanup splines | When true will cleanup the wire splines after finishing the process |
 
 ### Pole based generation parameters
 
@@ -140,10 +141,9 @@ You have examples for all of them in the Plugin content folder.
 | Random tilt | Max random rotation that will be applied to the poles|
 | Snap to terrain | Determines if the poles will try or not snap themselves to the terrain height |
 | Ray length| Determines the distance the raycast will check while trying to find nearest terrain  |
-| Align to normal| Determines wether the pole will align to the raycast hit normal or not |
+| Align to normal| Determines whether the pole will align to the raycast hit normal or not |
 | Collision channel | Collision channel the raycast will test for collision |
 | Draw debug lines | Determines if debug lines will be drawn for the raycast |
-| Cleanup splines | When true will cleanup the wire splines after finishing the process |
 
 ### Specific parameters
 
