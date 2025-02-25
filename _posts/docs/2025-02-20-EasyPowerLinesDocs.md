@@ -80,29 +80,85 @@ You have examples for all of them in the Plugin content folder.
 
 # Plugin usage
 
+# Point to point catenary
+
+1. Open the *Place actor* window in the editor and search for: **Point to point**, drag and drop it to the scene.
+2. Place both position widgets in the desired place.
+3. Fill the parameters.
+4. Press the **Generate** button.
+
+![image](/img/EasyPowerLinesDocs/PointToPointCatenary.png)
+
+# Multiple point catenary
+
+1. Open the *Place actor* window in the editor and search for: **Multiple point catenary**, drag and drop it to the scene.
+2. Add as many position widgets as desired and place them in the scene in the desired place.
+3. Fill the parameters.
+4. Press the **Generate** button.
+
+![image](/img/EasyPowerLinesDocs/MultiplePointCatenary.png)
+
+# Utility pole
+
+1. Open the *Place actor* window in the editor and search for: **Utility pole**, drag and drop it to the scene.
+2. Place the actor where desired.
+3. Fill the parameters. 
+4. Press the **Generate** button.
+
+> IMPORTANT:Remember to fill out the ''ACTOR TO CONECT TO'' parameter.
+
+![image](/img/EasyPowerLinesDocs/UtilityPole.png)
+
+
 ## Spline utility pole
 
-1. Open the *Place actor* window in the editor and search for: *Spline utility pole*, drag and drop it to the scene.
+1. Open the *Place actor* window in the editor and search for: **Spline utility pole**, drag and drop it to the scene.
 2. Shape the spline however you want.
-3. Fill the parameters:
+3. Fill the parameters.
+4. Press the **Generate** button.
 
-|*Param*|*Description*|
+![image](/img/EasyPowerLinesDocs/SplineUtilityPole.png)
+
+## Parameter description
+
+### General parameters
+
+|Param|Description|
+|---|---|
 | Slack | The min ammount of slack the wires will have |
 | Slack variation | Max random ammount of slack that will be added to the slack value |
 | Spline resolution | Determines how defined the catenary curve will be (Very high values will hit performance) |
-| Distance between objects | The distance, in centimeters, between each of the poles that will be generated.|
-| Preset class | Utility pole preset child class that will define pole mesh and wire conection targets |
-| Is closed loop | Determines if the spline is or not a closed loop |
-| Auto generate | Determines if the logic runs or not in the construction script (beta) |
-| Random tilt | Max random rotation that will be applied to the poles|
 | Wire mesh | Static mesh that will be used for the wire generation |
 | Wire mesh axis | The axis of the static mesh that will be the connection point, usually the long one |
+| Auto generate | Determines if the logic runs or not in the construction script (beta) |
+
+### Pole based generation parameters
+
+|Param|Description|
+|---|---|
+| Preset class | Utility pole preset child class that will define pole mesh and wire conection targets |
+| Random tilt | Max random rotation that will be applied to the poles|
 | Snap to terrain | Determines if the poles will try or not snap themselves to the terrain height |
 | Ray length| Determines the distance the raycast will check while trying to find nearest terrain  |
 | Align to normal| Determines wether the pole will align to the raycast hit normal or not |
 | Collision channel | Collision channel the raycast will test for collision |
 | Draw debug lines | Determines if debug lines will be drawn for the raycast |
 | Cleanup splines | When true will cleanup the wire splines after finishing the process |
+
+### Specific parameters
+
+### Utility Pole
+
+|Param|Description|
+|---|---|
+| Actor to conect to | The utility pole that will be used to create the splines from the one you're filling |
+
+### Spline utility pole
+
+|Param|Description|
+|---|---|
+| Is closed loop | Determines if the spline is or not a closed loop |
+| Distance between objects | The distance, in centimeters, between each of the poles that will be generated.|
 
 ## Parameters details
 
