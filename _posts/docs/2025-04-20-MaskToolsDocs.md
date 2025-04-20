@@ -6,7 +6,7 @@ date: 2025-04-20
 author: "Sora Mas"
 post_type: "documentation"
 thumb-img: "/img/MaskTools.png"
-header-img: "img/MaskToolsDocs/MaskToolsHeader.png"
+header-img: "img/MaskToolsDocs/MaskToolsHeaderDocs.png"
 hidden: true
 tags:
   - UE5
@@ -83,24 +83,23 @@ You can find the channel mixer tool navigating to the "Tools" dropdown on the up
 
 5 - **Export settings**:
 
-    - Texture prefix: Will be appended at the start of the name (Ej. **T_**)
+- Texture prefix: Will be appended at the start of the name (Ej. **T_**)
 
-    - Texture name: The name the exported texture will have.
+- Texture name: The name the exported texture will have.
 
-    - Texture suffix: Will be appended at the end of the name (Ej. **_Mask**)
+- Texture suffix: Will be appended at the end of the name (Ej. **_Mask**)
 
-    - Export folder: Export folder. Relative to editor content folder.
+- Export folder: Export folder. Relative to editor content folder.
 
-    - Texture resolution: Resoolution the texture will be exported in. Asumes 1:1 ratio.
+- Texture resolution: Resoolution the texture will be exported in. Asumes 1:1 ratio.
 
-    - Export button: On clicked the texture will be exported with the set settings.
+- Export button: On clicked the texture will be exported with the set settings.
 
 ### Notes 
 
-The selected texture is suposed to always be a grayscale texture and it's red channel will be the one used by the tool as the selected one. If the user want to use it's green or blue channels is supposed to first split that texture into single grayscale textures and use those as input for the channel mixer.
+* The selected texture is suposed to always be a grayscale texture and it's red channel will be the one used by the tool as the selected one. If the user want to use it's green or blue channels is supposed to first split that texture into single grayscale textures and use those as input for the channel mixer.
 
-Some default behaviours and values can be modified in the plugin settings.
-
+* Some default behaviours and values can be modified in the plugin settings.
 ![image](/img/MaskToolsDocs/TextureMixerSettings.png)
 
 
