@@ -6,7 +6,7 @@ date: 2025-04-20
 author: "Sora Mas"
 post_type: "documentation"
 thumb-img: "/img/MaskTools.png"
-header-img: "img/MaskTools/MaskToolsHeader.png"
+header-img: "img/MaskToolsDocs/MaskToolsHeader.png"
 hidden: true
 tags:
   - UE5
@@ -34,10 +34,14 @@ I was missing the ability for the game engine to handle this mask texture creati
 
 # Features
 
-- Texture Mixer - Merge up to 4 grayscale textures into one single RGBA texture using an editor built-in interface.
+## Texture Mixer
+
+Merge up to 4 grayscale textures into one single RGBA texture using an editor built-in interface.
 ![image](/img/MaskToolsDocs/ChannelMixerScreen.png)
 
-- Texture Splitter - Split any texture into it's RGBA channels, creating one single grayscale texture for each one of them. 
+## Texture Splitter
+
+Split any texture into it's RGBA channels, creating one single grayscale texture for each one of them. 
 
 # Prerequisites
 
@@ -70,22 +74,36 @@ You can find the channel mixer tool navigating to the "Tools" dropdown on the up
 ![image](/img/MaskToolsDocs/MaskToolsScheme.png)
 
 1 - **Channel texture preview** - Preview of the currently imported texture in that channel.
+
 2 - **Import button** - Will assign the current content browser selected texture to the channel.
+
 3 - **Restore default** - Will assign a 8x8 black texture to that channel. Used for empty channels.
+
 4 - **Result texture preview** - Previews the final texture that will be exported.
+
 5 - **Export settings**:
+
     - Texture prefix: Will be appended at the start of the name (Ej. **T_**)
+
     - Texture name: The name the exported texture will have.
+
     - Texture suffix: Will be appended at the end of the name (Ej. **_Mask**)
+
     - Export folder: Export folder. Relative to editor content folder.
+
     - Texture resolution: Resoolution the texture will be exported in. Asumes 1:1 ratio.
+
     - Export button: On clicked the texture will be exported with the set settings.
 
 ### Notes 
 
-A serie of default behaviour and values can be modified in the plugin settings.
+The selected texture is suposed to always be a grayscale texture and it's red channel will be the one used by the tool as the selected one. If the user want to use it's green or blue channels is supposed to first split that texture into single grayscale textures and use those as input for the channel mixer.
+
+Some default behaviours and values can be modified in the plugin settings.
 
 ![image](/img/MaskToolsDocs/TextureMixerSettings.png)
+
+
 
 ## Channel Splitter
 
