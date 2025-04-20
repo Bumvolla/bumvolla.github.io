@@ -20,7 +20,7 @@ tags:
 
 # Introduction
 
-Mask textures are usually used in game development and 3D art to compress up to 4 grayscale textures into a single RGBA texture. Using this industry standard method you can reduce drawcalls and improve your game performance. 
+Mask textures are usually used in game development and 3D art to compress up to 4 grayscale textures into a single RGBA texture. Using this method you can reduce drawcalls and improve your game performance. 
 
 For more information refer to these documentation pages:
 [Using texture masks](https://dev.epicgames.com/documentation/en-us/unreal-engine/using-texture-masks-in-unreal-engine)
@@ -30,7 +30,7 @@ For more information refer to these documentation pages:
 
 Texture masks are pretty usefull for 3D artists, VFX artists, Technical artists and kinda anyone working in a 3D environment. I've always been confused about why the creation method for this widespread workflow was so ofuscated, usually relying on paid 3rd party software (I'm looking at you, Adobe) or very niche open source software that, even solving the budget problem, still needs to be downloaded, installed and set up for not even offering your texture ready in engine.
 
-I was missing the ability for the game engine to handle this mask texture creation process, so I implemented it and released for all of you to enjoy in-engine mask texture manipulation tools :D
+I was missing the ability for the game engine to handle this mask texture creation process and thought it was a cool project so I implemented it and released for all of you to enjoy in-engine mask texture manipulation tools :D
 
 # Features
 
@@ -45,7 +45,7 @@ I was missing the ability for the game engine to handle this mask texture creati
 
 The plugin can be adquired in [Fab](https://www.fab.com/listings/0d7fb6db-b5ad-4375-9330-f659a633ffd1) or cloned or downloaded for free from [GitHub](https://github.com/Bumvolla/MaskTools).
 
-If you got Git installed on your computer you can clone the repository by typing this command in a terminal in your project "Plugins" folder:
+If you got Git installed on your computer you can clone the repository by typing this command in a terminal in your engine "Plugins/Marketplace" folder or your project "Plugins" folder:
 
 
 ~~~
@@ -63,8 +63,38 @@ If not, you can download the .zip file in the [latest release](https://github.co
 
 # Plugin usage
 
-## Texture Mixer
+## Channel Mixer
 
-You can find the texture mixer navigating to the "Tools" dropdown on the upper, and clicking on the "**Texture Mixer**" button.
+You can find the channel mixer tool navigating to the "Tools" dropdown on the upper side of the screen, and clicking on the "**Texture Mixer**" button.
 
 ![image](/img/MaskToolsDocs/MaskToolsScheme.png)
+
+1 - **Channel texture preview** - Preview of the currently imported texture in that channel.
+2 - **Import button** - Will assign the current content browser selected texture to the channel.
+3 - **Restore default** - Will assign a 8x8 black texture to that channel. Used for empty channels.
+4 - **Result texture preview** - Previews the final texture that will be exported.
+5 - **Export settings**:
+    - Texture prefix: Will be appended at the start of the name (Ej. **T_**)
+    - Texture name: The name the exported texture will have.
+    - Texture suffix: Will be appended at the end of the name (Ej. **_Mask**)
+    - Export folder: Export folder. Relative to editor content folder.
+    - Texture resolution: Resoolution the texture will be exported in. Asumes 1:1 ratio.
+    - Export button: On clicked the texture will be exported with the set settings.
+
+### Notes 
+
+A serie of default behaviour and values can be modified in the plugin settings.
+
+![image](/img/MaskToolsDocs/TextureMixerSettings.png)
+
+## Channel Splitter
+
+By just right clicking any texture in the content browser you'll be able to split it into 4 textures, one for each of it's channels.
+
+![gif](/img/MaskToolsDocs/ChannelSplitter.gif)
+
+### Notes
+
+By default each channel will be iterated to avoid exporting empty channels (full black or full white), this behaviour can be modified in the plugin settings.
+
+
