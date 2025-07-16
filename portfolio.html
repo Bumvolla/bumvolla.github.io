@@ -1,0 +1,14 @@
+---
+title: Portfolio
+layout: page
+description: ""
+header-img: "img/magicpunkbg.jpg"
+header-mask: 0.7
+---
+
+
+<!-- Porfolio markdown post container -->
+<div class="post-container">
+  {% capture portfolio %}{% include portfolio.md %}{% endcapture %}
+  {{ portfolio | markdownify }}
+</div>
