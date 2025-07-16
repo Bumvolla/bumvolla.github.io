@@ -11,19 +11,17 @@ For a detailed view of my professional experience, please refer to my
   - Shader based dynamic rain and wind system
   - VFX shaders
 
-  <div class="video-container">
-    <video class="responsive-video" controls preload="metadata">
-      <source src="/img/MagicPunk.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
+<div style="text-align: center; margin: 20px 0;">
+  <video style="width: 100%; max-width: 590px; height: auto;" controls>
+    <source src="/img/MagicPunk.mp4" type="video/mp4">
+  </video>
+</div>
 
-  <div class="video-container">
-    <video class="responsive-video" controls preload="metadata">
-      <source src="/img/SI.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
+<div style="text-align: center; margin: 20px 0;">
+  <video style="width: 100%; max-width: 590px; height: auto;" controls>
+    <source src="/img/SI.mp4" type="video/mp4">
+  </video>
+</div>
   <center><small>Some shaders :)</small></center> <br>
 
 
