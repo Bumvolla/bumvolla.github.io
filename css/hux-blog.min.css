@@ -1757,3 +1757,27 @@ form textarea {
   object-fit: cover;
   margin-left: auto;
 }
+
+.game-showcase {
+  margin: 20px 0;
+}
+
+.video-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.responsive-video {
+  width: 100%;
+  max-width: 590px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .responsive-video {
+    width: 95%;
+    max-width: none;
+  }
+}

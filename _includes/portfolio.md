@@ -10,12 +10,20 @@ For a detailed view of my professional experience, please refer to my
   - Architectural shaders, advanced vertex color, cube mapping, etc
   - Shader based dynamic rain and wind system
   - VFX shaders
-  <center> <video width="590" height="410" controls>
-  <source src="/img/MagicPunk.mp4" type="video/mp4">  </video> <br>
-  <center>
 
-  <center> <video width="400" height="400" controls>
-  <source src="/img/SI.mp4" type="video/mp4">  </video> <br>
+  <div class="video-container">
+    <video class="responsive-video" controls preload="metadata">
+      <source src="/img/MagicPunk.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="video-container">
+    <video class="responsive-video" controls preload="metadata">
+      <source src="/img/SI.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
   <center><small>Some shaders :)</small></center> <br>
 
 
